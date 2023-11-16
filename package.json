@@ -1,17 +1,15 @@
 {
-  "name": "app-name",
-  "version": "01",
-  "description": "Your application description",
+  "name": "app-image",
+  "version": "1.0.0",
+  "description": "Your Node.js application description",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --passWithNoTests",
-    "build": "tsc"
-  },
-  "devDependencies": {
-    "typescript": "^4.5.2",
-    "jest": "^27.4.7"
+    "build": "echo 'No build steps required for this application'" // Placeholder for build command
   },
   "author": "kameshwaran",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http": "^0.0.1" // Dependency on the http module
+  }
 }
