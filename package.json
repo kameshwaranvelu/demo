@@ -1,0 +1,15 @@
+{
+  "name": "app-name",
+  "version": "01",
+  "description": "Your application description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js", 
+    "test": "echo \"Error: no test specified\" && exit 1" 
+  },
+  "author": "kameshwaran",
+  "license": "MIT",
+  "dependencies": {
+   
+  }
+}
