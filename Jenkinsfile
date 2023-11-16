@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         nodejs 'nodejs' // Replace 'NodeJS' with your configured NodeJS installation name
-        docker 'docker' // Use the Docker tool configured in Jenkins
+         // Use the Docker tool configured in Jenkins
     }
 
     stages {
@@ -36,8 +36,10 @@ pipeline {
         stage('Docker Build and Push') {
             steps {
                 script {
-                    def appImage = docker.build('app-image:01')
-                    appImage.push()
+                    docker.withRegistry('https://hub.docker.com/repository/docker/kameshwaranvelu/sampleapp/', 'Kamesh@123') {
+                        def appImage = docker.build('app-name:01')
+                        appImage.push()
+                    }
                 }
             }
         }
