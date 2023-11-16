@@ -1,3 +1,4 @@
+
 {
   "name": "app-image",
   "version": "1.0.0",
@@ -8,8 +9,5 @@
     "build": "echo 'No build steps required for this application'"
   },
   "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "http": "^0.0.1"
-  }
+  "license": "MIT"
 }
