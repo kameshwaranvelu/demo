@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'No build steps required for this application'" // Placeholder for build command
+    "build": "echo 'No build steps required for this application'"
   },
-  "author": "kameshwaran",
+  "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "http": "^0.0.1" // Dependency on the http module
+    "http": "^0.0.1"
   }
 }
