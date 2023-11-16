@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         nodejs 'nodejs' // Replace 'NodeJS' with your configured NodeJS installation name
-        
+    }
 
     stages {
         stage('Checkout') {
@@ -16,14 +16,13 @@ pipeline {
             steps {
                 sh 'npm install'
             }
-        } // Added missing curly brace for Install Dependencies stage
+        }
 
         stage('Docker Build and Push') {
             steps {
                 script {
                     def dockerImage = docker.build('app-name:01')
                     dockerImage.push()
-                }
                 }
             }
         }
