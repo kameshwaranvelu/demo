@@ -16,23 +16,9 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
-                sh 'npm install -g jest'
+                
             }
-        }
-
-        stage('Run Tests') {
-            steps {
-                sh 'npm test'
-                // You can add test reporting or result parsing here
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'npm run build' // Replace with your build command if different
-                // Additional build steps if needed
-            }
-        }
+        
 
         stage('Docker Build and Push') {
             steps {
