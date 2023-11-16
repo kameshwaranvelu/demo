@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         nodejs 'nodejs' // Replace 'NodeJS' with your configured NodeJS installation name
-         // Use the Docker tool configured in Jenkins
+        // Use the Docker tool configured in Jenkins
     }
 
     stages {
@@ -16,9 +16,8 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
-                
             }
-        
+        } // Added missing curly brace for Install Dependencies stage
 
         stage('Docker Build and Push') {
             steps {
